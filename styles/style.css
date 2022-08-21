@@ -1,0 +1,565 @@
+body {
+  background-color: #017bab;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+  scroll-behavior: smooth;
+}
+.containerTotal{
+  width: fit-content;
+  height: 100%;
+}
+.navegaTotal {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(./../img/navcarbono.jpg);
+  background-size: cover;
+  top: 0;
+  overflow: hidden;
+}
+.logo {
+  width: 75px;
+  height: 70px;
+}
+
+.contLogoSigla {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  margin-left: 10px;
+  color: aliceblue;
+  font-size: 45px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+.iconMenu{
+    display:none;
+}
+
+.navegador ul li a{
+  padding-right: 25px;
+  height: auto;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: all .2;
+}
+.navegador ul li a:hover {
+  font-size: 20px;
+  font-weight: 1000;
+}
+
+.navegador {
+  height: 100%;
+  align-content: center;
+  display: flex;
+  align-content: center;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.totalRedes {
+  background-image: url(./../img/footercarbono.webp);
+  background-size: contain;
+  border-style: hidden;
+  height: 100%;
+  background-size: cover;
+}
+
+.footRedes {
+  display: block;
+}
+
+ul.footRedes {
+  display: block;
+}
+
+.tituRedes {
+  color: white;
+  display: flex;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.redes {
+  display: flex;
+  padding-left: 50px;
+}
+.redes li {
+  margin-right: 5px;
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.logos {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+.ubica li {
+  color: rgb(241, 241, 241);
+  list-style-type: none;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+.ubica {
+  display: flex;
+  margin: 25px 25px 25px 25px;
+}
+
+.IniSesion {
+  display: flex;
+  align-content: center;
+  height: auto;
+  justify-content: center;
+  background-image: url(./../img/12-129971_m.jpg);
+background-size: cover;
+}
+.tituIni {
+  text-align: center;
+  font-weight: 700;
+  font-size: xx-large;
+  margin: 25px 10px 10px 10px;
+}
+
+.contIngreso {
+  width: 70vh;
+  height: 90%;
+  background-color: rgb(65, 65, 65);
+  border-style: solid;
+  margin: 25px 25px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 7px 13px 37px #000;
+  border-top: 4px solid #017bab;
+  color: aliceblue;
+}
+.inputForm {
+  border: 2px solid #017bab;
+}
+.contBot {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 50%;
+  align-items: center;
+}
+.ingre {
+  padding: 5px 5px 5px 5px;
+  width: 150px;
+  text-align: center;
+}
+.butIngreso {
+  height: 50px;
+  width: 90px;
+  margin: 15px 5px 15px 5px;
+  color: white;
+  background-color: #017bab;
+  border-color: white;
+}
+
+article.articTotal {
+  background-color: aqua;
+  display: flex;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  
+  align-items: center;
+  height: 100%;
+}
+.tituP {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+h1.bienvenido {
+  font-size: 60px;
+  margin: 5px 5px 5px 5px;
+  padding: 5% 5% 5% 5%;
+}
+iframe.videoPre {
+  padding: 5% 5% 5% 5%;
+}
+p.bienveP {
+  text-align: justify;
+  margin: 8px 10px 30px 10px;
+  width: auto;
+}
+
+.contTarj {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "gridTrainer gridBox gridPrepF"
+    "gridTenis gridCalis gridNutri";
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: center;
+}
+.gridTrainer {
+  grid-area: gridTrainer;
+}
+.gridBox {
+  grid-area: gridBox;
+}
+.gridPrepF {
+  grid-area: gridPrepF;
+}
+.gridTenis {
+  grid-area: gridtenis;
+}
+.gridCalis {
+  grid-area: gridCalis;
+}
+.gridNutri {
+  grid-area: gridNutri;
+}
+
+.listado {
+  display: flex;
+  flex-wrap: wrap;
+}
+.olvi {
+  margin-top: 30px;
+  width: 150px;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.olvi:hover {
+  color: #017bab;
+}
+.listaCursos{
+  background-color: #0093E9;
+  background-image: linear-gradient(0deg, #0093E9 0%, #80D0C7 100%);
+  
+}
+.parte {
+  text-align: center;
+  font-size: 60px;
+  color: aliceblue;
+  background-image: url(./../img/navcarbono.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+.sobreNos {
+  background-color: #0093E9;
+  background-image: linear-gradient(180deg, #0093E9 0%, #80D0C7 100%);
+  
+  padding: 50px 100px 50px 100px;
+  text-align: justify;
+  justify-content: center;
+}
+.sobreNos p {
+  font-size: 20px;
+}
+
+.imgCurso {
+  width: 100%;
+  border-radius: 3px;
+  height: 200px;
+  margin-bottom: 15px;
+}
+.cadaCurso {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 25px 25px 25px 25px;
+  background-color: white;
+  transition: all .5s;
+}
+.cadaCurso:hover{
+  box-shadow: rgba(252, 242, 248, 0.4) 0px 5px, rgba(139, 137, 167, 0.247) 0px 10px, rgba(34, 34, 34, 0.2) 0px 15px, rgba(12, 1, 8, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+  transform: translateY(-10px);
+  width: 71%;
+
+}
+.cartaTitu {
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: underline;
+}
+.cuotas {
+  color: green;
+  margin-top: 15px;
+}
+.cadaCurso p {
+  margin-bottom: 20px;
+}
+.variasSedes {
+  text-align: center;
+  margin: 0px 0px 25px 0px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  font-size: 40px;
+}
+.totalSede {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.tituSede {
+  text-align: center;
+  margin: 30px 30px 30px 30px;
+  font-size: xx-large;
+}
+.sedeCont {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.imgSede {
+  margin-bottom: 30px;
+  border: solid 1px grey;
+}
+.totalMiniImage {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.miniImage {
+  height: 120px;
+  width: 120px;
+  margin-bottom: 25px;
+  border: solid 1px grey;
+}
+.ubicaSede {
+  margin-bottom: 50px;
+}
+.fondo {
+  background-color: #0093E9;
+  background-image: linear-gradient(180deg, #0093E9 0%, #80D0C7 100%);
+  
+}
+.inputarea {
+  height: 150px;
+  width: 300px;
+}
+.inputCont {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  background-color: rgb(65, 65, 65);
+  margin-bottom: 5px;
+}
+.contact {
+  width: 45%;
+}
+.placeholder {
+  color: white;
+}
+.clasex {
+  text-align: center;
+}
+div.clasex ul li {
+  display: inline;
+}
+label {
+  display: inline;
+}
+
+.navegador ul li a.botMenu{
+  display:none;
+}
+
+
+/* -------------------- media querie-------------- */
+@media screen and (max-width: 480px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    height: 100%;
+    width: 100%;
+  }
+
+  .contTarj {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "gridTrainer gridBox"
+      "gridPrepF gridTenis"
+      " gridCalis gridNutri";
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    justify-items: center;
+    background-image: url(./../img/fondolight.jpg);
+  }
+
+  .logo {
+    display: none;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .listaIndex {
+    display: none;
+  }
+  .navegaTotal {
+    justify-content: center;
+  }
+  article.articTotal {
+    display: block;
+    height: 100%;
+  }
+  .tituP {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+  .bienvenido {
+    display: block;
+    text-align: center;
+  }
+  .bienveP {
+    display: block;
+    font-size: 13px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .parte {
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .totalRedes {
+    display: block;
+    height: 100%;
+    background-size: cover;
+  }
+
+  .cadaCurso {
+    height: auto;
+    width: auto;
+    justify-content: space-between;
+    border-radius: 5px;
+  }
+  .cadaCurso p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .cartaTitu {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .sobreNos {
+    padding: 15px 10px 15px 10px;
+  }
+
+  .sobreNos p {
+    font-size: 13px;
+  }
+  .videoPre {
+    width: 400px;
+    height: 300px;
+    margin-left: 15px;
+  }
+
+  .tituRedes {
+    display: block;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+    font-size: medium;
+  }
+  .redes {
+    padding-left: 0px;
+    justify-content: center;
+  }
+  .redes li {
+    font-size: 12px;
+  }
+  .ubica {
+    padding: 25px 25px 25px 25px;
+    margin: 0px;
+    justify-content: center;
+  }
+  .ubi {
+    font-size: 13px;
+  }
+
+  .imgCurso {
+    margin-bottom: 2px;
+    height: 150px;
+  }
+
+  iframe {
+    width: 135px;
+    height: 135px;
+  }
+
+  /* -------barra desplegable------ */
+/*   .iconMenu{
+    position: absolute;
+    display: contents;
+  } */
+
+
+
+/* media querie pagina Sedes */
+.totalSede{
+  display:block;
+}
+.imgSede{
+  width: 90%;
+}
+.totalMiniImage{
+justify-content: space-around;
+}
+.sedesSedes{
+  width: 300px;
+  height: 250px;
+}
+/* formulario de inicio de sesion responsive */
+.IniSesion{
+  width: 100%;
+}
+.contIngreso{
+  width: 90%;
+}
+
+navegador{
+  display:contents;
+}
+ul li a.listaIndex{
+  display:none;
+}
+.navegador ul li a.botMenu {
+  display: none;
+}
+}
