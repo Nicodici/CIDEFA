@@ -131,9 +131,15 @@ footer {
   align-content: center;
   height: auto;
   justify-content: center;
-  background-image: url(./../img/12-129971_m.jpg);
-background-size: cover;
+
 }
+
+.fondoTo{
+  background-image: url(./../img/12-129971_m.jpg);
+  background-size: cover;
+ 
+}
+
 .tituIni {
   text-align: center;
   font-weight: 700;
@@ -183,7 +189,8 @@ article.articTotal {
   display: flex;
   background-color: #0093E9;
   background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-  
+  padding-top: 50px;
+  padding-bottom: 50px;
   align-items: center;
   height: 100%;
 }
@@ -357,9 +364,28 @@ p.bienveP {
 }
 .fondo {
   background-color: #0093E9;
-  background-image: linear-gradient(180deg, #0093E9 0%, #80D0C7 100%);
-  
+    -webkit-animation: color-change-2x 10s linear infinite alternate both;
+            animation: color-change-2x 10s linear infinite alternate both;
+  }  
+
+ @-webkit-keyframes fondo{
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
 }
+@keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+
+
 .inputarea {
   height: 150px;
   width: 300px;
@@ -550,10 +576,10 @@ justify-content: space-around;
   width: 100%;
 }
 .contIngreso{
-  width: 90%;
+  width: 89%;
 }
 
-navegador{
+.navegador{
   display:contents;
 }
 ul li a.listaIndex{
@@ -562,4 +588,6 @@ ul li a.listaIndex{
 .navegador ul li a.botMenu {
   display: none;
 }
+/* nueva rama */
+
 }
