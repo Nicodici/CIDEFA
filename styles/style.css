@@ -297,15 +297,16 @@ p.bienveP {
   flex-direction: column;
   width: 70%;
   margin: 25px 25px 25px 25px;
-  background-color: white;
-  transition: all .5s;
-}
-.cadaCurso:hover{
-  box-shadow: rgba(252, 242, 248, 0.4) 0px 5px, rgba(139, 137, 167, 0.247) 0px 10px, rgba(34, 34, 34, 0.2) 0px 15px, rgba(12, 1, 8, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
-  transform: translateY(-10px);
-  width: 71%;
-
-}
+  background: rgb(255, 255, 255);
+  border-radius: 0.4em;
+  box-shadow: 0.3em 0.3em 0.7em #00000015;
+  transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: rgb(250, 250, 250) 0.2em solid;
+ }
+ 
+ .cadaCurso:hover {
+  border: #1e3d66 0.2em solid;
+ }
 .cartaTitu {
   margin-bottom: 20px;
   text-align: center;
@@ -368,7 +369,7 @@ p.bienveP {
             animation: color-change-2x 10s linear infinite alternate both;
   }  
 
- @-webkit-keyframes fondo{
+ @keyframes fondo{
   0% {
     background: #19dcea;
   }
