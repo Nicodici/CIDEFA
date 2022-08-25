@@ -281,9 +281,15 @@ footer {
   align-content: center;
   height: auto;
   justify-content: center;
-  background-image: url(./../img/12-129971_m.jpg);
-background-size: cover;
+
 }
+
+.fondoTo{
+  background-image: url(./../img/12-129971_m.jpg);
+  background-size: cover;
+ 
+}
+
 .tituIni {
   text-align: center;
   font-weight: 700;
@@ -329,6 +335,66 @@ background-size: cover;
 }
 /* TERMINA PAGINA REGISTRO */
 
+article.articTotal {
+  background-color: aqua;
+  display: flex;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center;
+  height: 100%;
+}
+.tituP {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+h1.bienvenido {
+  font-size: 60px;
+  margin: 5px 5px 5px 5px;
+  padding: 5% 5% 5% 5%;
+}
+iframe.videoPre {
+  padding: 5% 5% 5% 5%;
+}
+p.bienveP {
+  text-align: justify;
+  margin: 8px 10px 30px 10px;
+  width: auto;
+}
+
+.contTarj {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "gridTrainer gridBox gridPrepF"
+    "gridTenis gridCalis gridNutri";
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: center;
+}
+.gridTrainer {
+  grid-area: gridTrainer;
+}
+.gridBox {
+  grid-area: gridBox;
+}
+.gridPrepF {
+  grid-area: gridPrepF;
+}
+.gridTenis {
+  grid-area: gridtenis;
+}
+.gridCalis {
+  grid-area: gridCalis;
+}
+.gridNutri {
+  grid-area: gridNutri;
+}
+
 .listado {
   display: flex;
   flex-wrap: wrap;
@@ -344,8 +410,41 @@ background-size: cover;
   color: #017bab;
 }
 
-
 /* PAGINA SEDES */
+.imgCurso {
+  width: 100%;
+  border-radius: 3px;
+  height: 200px;
+  margin-bottom: 15px;
+}
+.cadaCurso {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 25px 25px 25px 25px;
+  background: rgb(255, 255, 255);
+  border-radius: 0.4em;
+  box-shadow: 0.3em 0.3em 0.7em #00000015;
+  transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: rgb(250, 250, 250) 0.2em solid;
+ }
+ 
+ .cadaCurso:hover {
+  border: #1e3d66 0.2em solid;
+ }
+.cartaTitu {
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: underline;
+}
+.cuotas {
+  color: green;
+  margin-top: 15px;
+}
+.cadaCurso p {
+  margin-bottom: 20px;
+}
 .variasSedes {
   margin: 0px 0px 25px 0px;
   align-items: center;
@@ -407,13 +506,31 @@ background-size: cover;
 }
 .fondo {
   background-color: #0093E9;
-  background-image: linear-gradient(180deg, #0093E9 0%, #80D0C7 100%);
-  
+    -webkit-animation: color-change-2x 10s linear infinite alternate both;
+            animation: color-change-2x 10s linear infinite alternate both;
+  }  
+
+ @keyframes fondo{
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
 }
 
 /* TERMINA PAGINA SEDES */
 
 /* PAGINA CONTACTO */
+@keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+
 .inputarea {
   height: 150px;
   width: 300px;
@@ -594,10 +711,21 @@ justify-content: space-around;
   width: 100%;
 }
 .contIngreso{
-  width: 90%;
+  width: 89%;
 }
 .videoQuerie{
   width: 150px;
   height: 150px;
 }
+.navegador{
+  display:contents;
+}
+ul li a.listaIndex{
+  display:none;
+}
+.navegador ul li a.botMenu {
+  display: none;
+}
+/* nueva rama */
+
 }
