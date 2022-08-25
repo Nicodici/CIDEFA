@@ -504,19 +504,8 @@ p.bienveP {
 .ubicaSede {
   margin-bottom: 50px;
 }
-.fondo {
-  background-color: #0093E9;
-    -webkit-animation: color-change-2x 10s linear infinite alternate both;
-            animation: color-change-2x 10s linear infinite alternate both;
-  }  
-
- @keyframes fondo{
-  0% {
-    background: #19dcea;
-  }
-  100% {
-    background: #b22cff;
-  }
+.fondoArt {
+background-image: url(./../img/fondolight.jpg);
 }
 
 /* TERMINA PAGINA SEDES */
