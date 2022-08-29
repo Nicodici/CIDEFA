@@ -72,7 +72,7 @@ p.bienveP {
   background-clip: text; 
 }
 .divh1{
-  height: 120px;
+  height: 150px;
   display: flex;
   background-image: url(./../img/navcarbono.jpg);
   background-size: cover;
@@ -355,6 +355,7 @@ h1.bienvenido {
   font-size: 60px;
   margin: 5px 5px 5px 5px;
   padding: 5% 5% 5% 5%;
+  font-weight: bold;
 }
 iframe.videoPre {
   padding: 5% 5% 5% 5%;
@@ -411,6 +412,9 @@ p.bienveP {
 }
 
 /* PAGINA SEDES */
+.titUrquiza{
+  display:none;
+}
 .imgCurso {
   width: 100%;
   border-radius: 3px;
@@ -442,6 +446,17 @@ p.bienveP {
   color: green;
   margin-top: 15px;
 }
+
+.cuotas {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  animation-iteration-count:infinite;
+  animation-direction: alternate-reverse;
+}
+
 .cadaCurso p {
   margin-bottom: 20px;
 }
@@ -486,9 +501,18 @@ p.bienveP {
   display: flex;
   flex-direction: column;
 }
-.imgSede {
+.imgSede1 {
   margin-bottom: 30px;
   border: solid 1px grey;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.contImagenesGrandes{
+  border: black 5px solid;
+  width: 500px;
+  height: 350px;
+  overflow: hidden;
 }
 .totalMiniImage {
   display: flex;
@@ -504,10 +528,70 @@ p.bienveP {
 .ubicaSede {
   margin-bottom: 50px;
 }
-.fondoArt {
-background-image: url(./../img/fondolight.jpg);
+.artTotalSede {
+background-image: url(./../img/27570.png);
 }
 
+.ContItemCarrusel{
+  border: 3px solid black;
+  height: 350px;
+  width: 500px;
+  overflow: hidden ;
+}
+.ContCarrusel{
+  border: black 1px solid;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.ContimgCarrusel{
+  width: 100%;
+  height: 100%;
+}
+.flechasCarrusel{
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.flechas{
+  text-decoration: none;
+}
+.fa-solid{
+font-size: 30px;
+color: aliceblue;
+}
+.FotosVR{
+  width: 100%;
+  height: 100%;
+}
+
+.articleTotal{
+  display: flex;
+  justify-content: space-evenly;
+  height: 550px;
+  align-items: center;}
+.NombreSedes{
+  display:flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+}
+.fondoTotalSede{
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+}
+.NombreSedesTi{
+  font-size: 3rem;
+  font-weight: bold;
+}
+.VillaUr{
+  padding-left: 50px;
+}
 /* TERMINA PAGINA SEDES */
 
 /* PAGINA CONTACTO */
@@ -715,6 +799,34 @@ ul li a.listaIndex{
 .navegador ul li a.botMenu {
   display: none;
 }
-/* nueva rama */
+/* media querie sedes*/
+.NombreSedes{
+  display:block;
+}
+.NombreSedesTi{
+  text-align: center;
+  font-weight: bold;
+}
+.VillaUr{
+  padding-left: 0px;
+  display:none;
 
+}
+.articleTotal{
+  display:block;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+.ContItemCarrusel{
+  border: 3px solid black;
+  height: 250px;
+  width: 90%;
+  margin:20px;
+}
+ .titUrquiza{
+    display:block;
+    text-align: center;
+    padding-top: 30px;
+  }
 }

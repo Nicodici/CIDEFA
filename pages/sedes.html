@@ -5,7 +5,7 @@
   <title>C.I.D.E.F.A</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-
+  <script src="https://kit.fontawesome.com/ddd52b1742.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./../styles/style.css" />
   <link rel="shortcut icon" href="./../img/logo.jpg" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,38 +50,98 @@
         </div>
     </div>
 </nav>
-  <article class="fondoArt">
-    <!-- Seccion de imagenes -->
-    <h1 class="variasSedes animate__animated  animate__fadeIn">Sedes disponibles</h1>
-    <div class="totalSede">
-      <div class="sedeCont">
-        <h3 class="tituSede animate__animated  animate__fadeIn">VILLA REAL</h3>
-        <img class="imgSede" src="./../img/img_8138.jpg" width="500" height="350px" />
-        <div class="totalMiniImage">
-          <img class="miniImage" src="./../img/cintavillareal.jfif" alt="" />
-          <img class="miniImage" src="./../img/boxeovr.jpg" alt="" />
-          <img class="miniImage" src="./../img/vestuariovr.jpg" alt="" />
-        </div>
-        <iframe class="ubicaSede sedesSedes"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13133.637541692384!2d-58.53298917320864!3d-34.61909347867011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8247b5a7299%3A0x38e937ff336561e1!2sVilla%20Real%2C%20CABA!5e0!3m2!1ses!2sar!4v1659377523111!5m2!1ses!2sar"
-          width="450" height="250" style="border: 0" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+<div class="fondoTotalSede">
+   <div class="NombreSedes">
+    <h1 class="NombreSedesTi">VILLA REAL</h1>
+    <H1 class="NombreSedesTi VillaUr">VILLA URQUIZA</H1>
+   </div>
+<article class="articleTotal">
+  <div class="ContItemCarrusel">
+  <div class="ContCarrusel" id="contItem1">
+      <div class="ContimgCarrusel" >
+          <img class="FotosVR" src="./../img/boxeovr.jpg" alt="img">
       </div>
-      <div class="sedeCont">
-        <h3 class="tituSede animate__animated animate__fadeIn ">VILLA URQUIZA</h3>
-        <img class="imgSede" src="./../img/gim2.jpg" width="500" height="350px" />
-        <div class="totalMiniImage">
-          <img class="miniImage" src="./../img/cintaurquiza.jfif" alt="" />
-          <img class="miniImage" src="./../img/boxeovu.jfif" alt="" />
-          <img class="miniImage" src="./../img/vestuariovu.webp" alt="" />
-        </div>
-        <iframe class="ubicaSede sedesSedes"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26282.194622144416!2d-58.50625638250277!3d-34.571924612447944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb65c360890c1%3A0x8bd20bac2f970066!2sVilla%20Urquiza%2C%20CABA!5e0!3m2!1ses!2sar!4v1659378118835!5m2!1ses!2sar"
-          width="450" height="250" style="border: 0" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="flechasCarrusel">
+         <a class="flechas" href="#contItem4"> <i class="fa-solid fa-circle-arrow-left"></i></a>
+         <a class="flechas" href="#contItem2"> <i class="fa-solid fa-circle-arrow-right"></i></a>
       </div>
-    </div>
-  </article>
+ </div>
+  <div class="ContCarrusel" id="contItem2">
+      <div class="ContimgCarrusel" >
+          <img class="FotosVR" src="./../img/cintavillareal.jfif" alt="img">
+      </div>
+      <div class="flechasCarrusel" >
+          <a class="flechas" href="#contItem1"> <i class="fa-solid fa-circle-arrow-left"></i></a>
+          <a class="flechas" href="#contItem3"> <i class="fa-solid fa-circle-arrow-right"></i></a>
+      </div>
+ </div>
+  <div class="ContCarrusel"  id="contItem3">
+      <div class="ContimgCarrusel ">
+          <img class="FotosVR" src="./../img/vestuariovr.jpg" alt="img">
+      </div>
+      <div class="flechasCarrusel">
+          <a class="flechas" href="#contItem2"> <i class="fa-solid fa-circle-arrow-left"></i></a>
+          <a class="flechas" href="#contItem4"> <i class="fa-solid fa-circle-arrow-right"></i></a>
+      </div>
+  </div>
+  <div class="ContCarrusel" id="contItem4" >
+      <div class="ContimgCarrusel" >
+          <img class="FotosVR" src="./../img/gymvr.jpg" alt="img">
+      </div>
+      <div class="flechasCarrusel">
+          <a class="flechas" href="#contItem3"> <i class="fa-solid fa-circle-arrow-left"></i></a>
+          <a class="flechas" href="#contItem1"> <i class="fa-solid fa-circle-arrow-right"></i></a>
+      </div>
+  </div>
+</div>
+
+<H1 class="NombreSedesTi titUrquiza">VILLA URQUIZA</H1>
+<!-- TERMINADO IMAGENES ROTATIVAS VR -->
+<div class="ContItemCarrusel">
+  <div class="ContCarrusel" id="contItem1-vu">
+      <div class="ContimgCarrusel" >
+          <img class="FotosVR" src="./../img/boxeovu.jfif" alt="img">
+      </div>
+      <div class="flechasCarrusel">
+         <a class="flechas" href="#contItem4-vu"> <i class="fa-solid fa-circle-arrow-left"></i></a>
+         <a class="flechas" href="#contItem2-vu"> <i class="fa-solid fa-circle-arrow-right"></i></a>
+      </div>
+ </div>
+  <div class="ContCarrusel" id="contItem2-vu">
+      <div class="ContimgCarrusel" >
+          <img class="FotosVR" src="./../img/vestuariovu.webp" alt="img">
+      </div>
+      <div class="flechasCarrusel" >
+          <a class="flechas" href="#contItem1-vu"> <i class="fa-solid fa-circle-arrow-left"></i></a>
+          <a class="flechas" href="#contItem3-vu"> <i class="fa-solid fa-circle-arrow-right"></i></a>
+      </div>
+ </div>
+  <div class="ContCarrusel"  id="contItem3-vu">
+      <div class="ContimgCarrusel ">
+          <img class="FotosVR" src="./../img/gymvu.jpg" alt="img">
+      </div>
+      <div class="flechasCarrusel">
+          <a class="flechas" href="#contItem2-vu"> <i class="fa-solid fa-circle-arrow-left"></i></a>
+          <a class="flechas" href="#contItem4-vu"> <i class="fa-solid fa-circle-arrow-right"></i></a>
+      </div>
+  </div>
+  <div class="ContCarrusel" id="contItem4-vu" >
+      <div class="ContimgCarrusel" >
+          <img class="FotosVR" src="./../img/cintaurquiza.jfif" alt="img">
+      </div>
+      <div class="flechasCarrusel">
+          <a class="flechas" href="#contItem3-vu"> <i class="fa-solid fa-circle-arrow-left"></i></a>
+          <a class="flechas" href="#contItem1-vu"> <i class="fa-solid fa-circle-arrow-right"></i></a>
+      </div>
+  </div>
+</div>
+
+</article>
+</div>
+</div>
+
+
+
 
   <footer class="totalRedes">
     <div class="footRedes">
