@@ -1,0 +1,16 @@
+{
+  "name": "nico",
+  "version": "1.0.0",
+  "description": "nico",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "node-sass --include-path scss styles/scss/precompi.scss styles/css/compiscss.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "nico",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

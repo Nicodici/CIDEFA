@@ -1,0 +1,248 @@
+/* empieza navbar */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+  scroll-behavior: smooth;
+}
+.navbar-titulo {
+  font-size: 3rem;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+  .nav-link {
+    font-weight: bold;
+  }
+}
+/* final navbar */
+/* COMIENZA ARTICULO DE BIENVENIDA */
+.articTotal {
+  display: flex;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center;
+  height: 100%;
+  .tituP {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    .bienvenido {
+      font-size: 60px;
+      margin: 5px 5px 5px 5px;
+      padding: 5% 5% 5% 5%;
+      font-weight: bold;
+    }
+    .bienveP {
+      text-align: justify;
+      margin: 8px 10px 30px 10px;
+      width: auto;
+    }
+  }
+
+  .contVideo {
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    display: flex;
+  }
+}
+/* FINAL ARTICULO DE BIENVENIDA */
+
+/* COMIENZA ARTICULO DE CARTAS DE CADA CURSO */
+
+.listaCursos {
+  background-color: #0093e9;
+  background-image: linear-gradient(0deg, #0093e9 0%, #80d0c7 100%);
+
+  .divh1 {
+    height: 150px;
+    display: flex;
+    background-image: url(./../img/navcarbono.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    .parte {
+      text-align: center;
+      font-size: 60px;
+      color: aliceblue;
+      width: 100%;
+    }
+  }
+  .contTarj {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "gridTrainer gridBox gridPrepF"
+      "gridTenis gridCalis gridNutri";
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: center;
+    .cadaCurso {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      margin: 25px 25px 25px 25px;
+      background-color: white;
+      justify-content: space-between;
+      border-radius: 10px;
+      box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+      box-sizing: border-box;
+      &hover {
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      }
+      .imgCurso {
+        width: 100%;
+        border-radius: 3px;
+        height: 200px;
+        margin-bottom: 15px;
+      }
+      .cartaTitu {
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: bold;
+      }
+      .cuotas {
+        color: green;
+        margin-top: 15px;
+      }
+      .suscribe {
+        padding-bottom: 10px;
+        align-items: center;
+        background-image: linear-gradient(
+          144deg,
+          #af40ff,
+          #5b42f3 50%,
+          #00ddeb
+        );
+        border: 0;
+        border-radius: 8px;
+        box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+        box-sizing: border-box;
+        color: #ffffff;
+        display: flex;
+        font-family: Phantomsans, sans-serif;
+        font-size: 18px;
+        justify-content: center;
+        line-height: 1em;
+        max-width: 100%;
+        min-width: 140px;
+        padding: 3px;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+
+      .suscribe:active,
+      .suscribe:hover {
+        outline: 0;
+      }
+
+      .suscribe span {
+        background-color: rgb(5, 6, 45);
+        padding: 16px 24px;
+        border-radius: 6px;
+        width: 100%;
+        height: 100%;
+        transition: 300ms;
+        &hover span {
+          background: none;
+        }
+        &active {
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+  .gridTrainer {
+    grid-area: gridTrainer;
+  }
+  .gridBox {
+    grid-area: gridBox;
+  }
+  .gridPrepF {
+    grid-area: gridPrepF;
+  }
+  .gridTenis {
+    grid-area: gridtenis;
+  }
+  .gridCalis {
+    grid-area: gridCalis;
+  }
+  .gridNutri {
+    grid-area: gridNutri;
+  }
+}
+/* TERMINA ARTICULO DE CARTAS DE CADA CURSO */
+
+/* COMIENZA SOBRE NOSOTROS */
+
+.SobreNostotal {
+  height: 100%;
+  .sobreNos {
+    background-color: #0093e9;
+    background-image: linear-gradient(180deg, #0093e9 0%, #80d0c7 100%);
+
+    padding: 50px 100px 50px 100px;
+    text-align: justify;
+    justify-content: center;
+    .bienveP {
+      font-size: 25px;
+    }
+  }
+}
+
+/* TERMINA SOBRE NOSOTROS */
+
+/* COMIENZA ANIDACION DE FOOTER */
+
+.totalRedes {
+  background-image: url(./../img/footercarbono.webp);
+  background-size: contain;
+  border-style: hidden;
+  height: 100%;
+  background-size: cover;
+  .tituRedes {
+    color: white;
+    display: flex;
+    padding-top: 50px;
+    padding-left: 50px;
+  }
+  .redes {
+    display: flex;
+    padding-left: 50px;
+    li {
+      margin-right: 5px;
+      list-style-type: none;
+      margin-top: 10px;
+      .logos {
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}
+.ubica {
+  display: flex;
+  margin: 25px 25px 25px 25px;
+  ul {
+    li {
+      color: rgb(241, 241, 241);
+      list-style-type: none;
+      margin-top: 10px;
+      margin-right: 25px;
+    }
+  }
+}

@@ -18,31 +18,19 @@
     height: 100%;
     display: flex;
 }
-.h1.bienvenido {
-  padding: 5% 5% 0% 5%;
-  text-align: left; 
-  font-family: Arial Black; 
-  font-weight: bold; font-size: 4rem; 
-  background: #000000; 
-  -webkit-background-clip: text; 
-  -moz-background-clip: text; 
-  background-clip: text; 
-  color: transparent; 
-  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.164),0px -1px 1px rgba(0,0,0,0.3);
 
-}
 .navbar-titulo{
   font-size: 3rem;
 }
-a.nav-link{
+.nav-link{
   font-weight: bold;
 }
-a {
+a{
   text-decoration: none;
   color: aliceblue;
 
 }
-article.articTotal {
+.articTotal {
   display: flex;
   background-color: #0093E9;
   background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
@@ -59,8 +47,6 @@ article.articTotal {
 
 
 }
-
-
 
 p.bienveP {
   text-align: justify;
@@ -120,6 +106,9 @@ p.bienveP {
   font-size: 60px;
   color: aliceblue;
   width: 100%;
+}
+.SobreNostotal{
+  height: 100%;
 }
 .sobreNos {
   background-color: #0093E9;
@@ -229,15 +218,6 @@ button.suscribe{
   height: 100%;
   background-size: cover;
 }
-
-.footRedes {
-  display: block;
-}
-
-ul.footRedes {
-  display: block;
-}
-
 .tituRedes {
   color: white;
   display: flex;
@@ -351,7 +331,7 @@ article.articTotal {
   align-items: center;
   width: 50%;
 }
-h1.bienvenido {
+.bienvenido {
   font-size: 60px;
   margin: 5px 5px 5px 5px;
   padding: 5% 5% 5% 5%;
@@ -360,7 +340,7 @@ h1.bienvenido {
 iframe.videoPre {
   padding: 5% 5% 5% 5%;
 }
-p.bienveP {
+.bienveP {
   text-align: justify;
   margin: 8px 10px 30px 10px;
   width: auto;
