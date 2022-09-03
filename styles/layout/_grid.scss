@@ -1,0 +1,29 @@
+.contTarj {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "gridTrainer gridBox gridPrepF"
+      "gridTenis gridCalis gridNutri";
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: center;
+  }
+  .gridTrainer {
+    grid-area: gridTrainer;
+  }
+  .gridBox {
+    grid-area: gridBox;
+  }
+  .gridPrepF {
+    grid-area: gridPrepF;
+  }
+  .gridTenis {
+    grid-area: gridtenis;
+  }
+  .gridCalis {
+    grid-area: gridCalis;
+  }
+  .gridNutri {
+    grid-area: gridNutri;
+  }

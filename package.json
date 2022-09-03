@@ -1,14 +1,22 @@
 {
-  "name": "nico",
+  "name": "cidefa",
   "version": "1.0.0",
-  "description": "nico",
+  "description": "",
   "main": "index.html",
   "scripts": {
     "build-css": "node-sass --include-path scss styles/scss/precompi.scss styles/css/compiscss.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "nico",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicodici/CIDEFA.git"
+  },
+  "author": "Nco",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nicodici/CIDEFA/issues"
+  },
+  "homepage": "https://github.com/Nicodici/CIDEFA#readme",
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.19"

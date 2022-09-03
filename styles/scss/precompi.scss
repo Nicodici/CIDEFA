@@ -1,3 +1,4 @@
+@import "./../layout/grid";
 /* empieza navbar */
 * {
   margin: 0;
@@ -246,3 +247,46 @@ a {
     }
   }
 }
+/* anidacion PAGINA FORM INGRESO */
+.fondoTo{
+  background-image: url(./../img/12-129971_m.jpg);
+  background-size: cover;
+  .IniSesion {
+    display: flex;
+    align-content: center;
+    height: auto;
+    justify-content: center;
+    .contIngreso {
+      width: 70vh;
+      height: 90%;
+      background-color: rgb(65, 65, 65);
+      border-style: solid;
+      margin: 25px 25px 25px 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 7px 13px 37px #000;
+      border-top: 4px solid #017bab;
+      color: aliceblue;
+      .tituIni {
+        text-align: center;
+        font-weight: 700;
+        font-size: xx-large;
+        margin: 25px 10px 10px 10px;
+      }
+      .clasex {
+        text-align: center;
+        
+      }
+      .butIngreso {
+        height: 50px;
+        width: 90px;
+        margin: 15px 5px 15px 5px;
+        color: white;
+        background-color: #017bab;
+        border-color: white;
+      }
+    }
+  }
+}
+/* TERMINA ANIDACION FORM INGRESO */

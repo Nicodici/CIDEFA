@@ -391,10 +391,7 @@ iframe.videoPre {
   color: #017bab;
 }
 
-/* PAGINA SEDES */
-.titUrquiza{
-  display:none;
-}
+
 .imgCurso {
   width: 100%;
   border-radius: 3px;
@@ -440,139 +437,20 @@ iframe.videoPre {
 .cadaCurso p {
   margin-bottom: 20px;
 }
-.variasSedes {
-  margin: 0px 0px 25px 0px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  padding-top: 40px;
-  text-align: left; 
-  font-family: Arial Black; 
-  font-weight: bold; font-size: 70px; 
-  background: #202020; 
-  -webkit-background-clip: text; 
-  -moz-background-clip: text; 
-  background-clip: text; 
-  color: transparent; 
-  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.37),0px -1px 1px rgba(0,0,0,0.3);
 
-
-}
-.totalSede {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-.tituSede {
-  text-align: left; 
-  font-family: Arial Black; 
-  font-weight: bold; font-size: 30px; 
-  background: #202020; 
-  -webkit-background-clip: text; 
-  -moz-background-clip: text; 
-  background-clip: text; 
-  color: transparent; 
-  text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
-}
-.sedeCont {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-}
-.imgSede1 {
-  margin-bottom: 30px;
-  border: solid 1px grey;
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-.contImagenesGrandes{
-  border: black 5px solid;
-  width: 500px;
-  height: 350px;
-  overflow: hidden;
-}
-.totalMiniImage {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-.miniImage {
-  height: 120px;
-  width: 120px;
-  margin-bottom: 25px;
-  border: solid 1px grey;
-}
-.ubicaSede {
-  margin-bottom: 50px;
-}
-.artTotalSede {
-background-image: url(./../img/27570.png);
+.contFondoSede{
+background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 
-.ContItemCarrusel{
-  border: 3px solid black;
-  height: 350px;
-  width: 500px;
-  overflow: hidden ;
-}
-.ContCarrusel{
-  border: black 1px solid;
-  height: 100%;
+ .tamImgSede{
+  height: 500px;
   width: 100%;
-  position: relative;
-}
-.ContimgCarrusel{
-  width: 100%;
-  height: 100%;
-}
-.flechasCarrusel{
-  position: absolute;
-  height: 100%;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-
-.flechas{
-  text-decoration: none;
-}
-.fa-solid{
-font-size: 30px;
-color: aliceblue;
-}
-.FotosVR{
-  width: 100%;
-  height: 100%;
-}
-
+ }
 .articleTotal{
   display: flex;
   justify-content: space-evenly;
   height: 550px;
   align-items: center;}
-.NombreSedes{
-  display:flex;
-  justify-content: space-evenly;
-  padding-top: 30px;
-}
-.fondoTotalSede{
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-
-}
-.NombreSedesTi{
-  font-size: 3rem;
-  font-weight: bold;
-}
-.VillaUr{
-  padding-left: 50px;
-}
-/* TERMINA PAGINA SEDES */
 
 /* PAGINA CONTACTO */
 @keyframes color-change-2x {
