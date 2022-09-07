@@ -1,450 +1,299 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto Slab', serif;
-  scroll-behavior: smooth;
-}
-
-/*--------------- PAGINA INDEX -------------------*/ 
-.containerTotal{
-  width: fit-content;
-  height: 100%;
-}
-p{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.contVideo{
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 100%;
-    display: flex;
-}
-
-.navbar-titulo{
-  font-size: 3rem;
-}
-.nav-link{
-  font-weight: bold;
-}
-a{
-  text-decoration: none;
-  color: aliceblue;
-
-}
-
-.tituP {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-.divh1{
-  height: 150px;
-  display: flex;
-  background-image: url(./../img/navcarbono.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  align-items: center;
-  justify-content: center;
-}
-
 .contTarj {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
-    "gridTrainer gridBox gridPrepF"
-    "gridTenis gridCalis gridNutri";
+   "gridTrainer gridBox gridPrepF"
+ "gridTenis gridCalis gridNutri";
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  justify-items: center;
-}
+  justify-items: center; }
+
 .gridTrainer {
-  grid-area: gridTrainer;
-}
+  grid-area: gridTrainer; }
+
 .gridBox {
-  grid-area: gridBox;
-}
+  grid-area: gridBox; }
+
 .gridPrepF {
-  grid-area: gridPrepF;
-}
+  grid-area: gridPrepF; }
+
 .gridTenis {
-  grid-area: gridtenis;
-}
+  grid-area: gridtenis; }
+
 .gridCalis {
-  grid-area: gridCalis;
-}
+  grid-area: gridCalis; }
+
 .gridNutri {
-  grid-area: gridNutri;
-}
-.listaCursos{
-  background-color: #0093E9;
-  background-image: linear-gradient(0deg, #0093E9 0%, #80D0C7 100%);
-  
-}
-.parte {
-  text-align: center;
-  font-size: 60px;
-  color: aliceblue;
-  width: 100%;
-}
-.SobreNostotal{
-  height: 100%;
-}
-.sobreNos {
-  background-color: #0093E9;
-  background-image: linear-gradient(180deg, #0093E9 0%, #80D0C7 100%);
-  
-  padding: 50px 100px 50px 100px;
-  text-align: justify;
-  justify-content: center;
-}
-.sobreNos p {
-  font-size: 20px;
-}
+  grid-area: gridNutri; }
 
-.imgCurso {
-  width: 100%;
-  border-radius: 3px;
-  height: 200px;
-  margin-bottom: 15px;
-}
-.cadaCurso {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  margin: 25px 25px 25px 25px;
-  background-color: white;
-  justify-content: space-between;
-  border-radius: 10px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-  box-sizing: border-box;
- 
-}
-.cadaCurso:hover {
+/* empieza navbar */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+  scroll-behavior: smooth; }
 
-   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}
+.navbar-titulo {
+  font-size: 3rem; }
 
-.cartaTitu {
-  margin-bottom: 20px;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: underline;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.cuotas {
-  color: green;
-  margin-top: 15px;
-}
-.cadaCurso p {
-  margin-bottom: 20px;
-}
-button.suscribe{
-  margin-bottom: 10px;
-}
-.suscribe {
-  padding-bottom: 10px;
-  align-items: center;
-  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-  border: 0;
-  border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  display: flex;
-  font-family: Phantomsans, sans-serif;
-  font-size: 18px;
-  justify-content: center;
-  line-height: 1em;
-  max-width: 100%;
-  min-width: 140px;
-  padding: 3px;
+a {
   text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  cursor: pointer;
-  transition: all .3s;
- }
- 
- .suscribe:active,
- .suscribe:hover {
-  outline: 0;
- }
- 
- .suscribe span {
-  background-color: rgb(5, 6, 45);
-  padding: 16px 24px;
-  border-radius: 6px;
-  width: 100%;
-  height: 100%;
-  transition: 300ms;
- }
- 
- .suscribe:hover span {
-  background: none;
- }
- 
- .suscribe:active {
-  transform: scale(0.9);
- }
+  color: aliceblue; }
+  a .nav-link {
+    font-weight: bold; }
 
-/* FOOTER REDES */
+/* final navbar */
+/* COMIENZA ARTICULO DE BIENVENIDA */
+.articTotal {
+  display: flex;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  padding-top: 50px;
+  padding-bottom: 70px;
+  align-items: center;
+  height: 100%; }
+  .articTotal .tituP {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%; }
+    .articTotal .tituP .bienvenido {
+      font-size: 60px;
+      margin: 5px 5px 5px 5px;
+      padding: 5% 5% 5% 5%;
+      font-weight: bold; }
+    .articTotal .tituP .bienveP {
+      text-align: justify;
+      padding: 0px 2px 20px 30px;
+      width: auto; 
+      line-height: 30px;
+      font-size: 20px
+    }
+  .articTotal .contVideo {
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    display: flex; }
+
+/* FINAL ARTICULO DE BIENVENIDA */
+/* COMIENZA ARTICULO DE CARTAS DE CADA CURSO */
+.listaCursos {
+  background-color: #0093e9;
+  background-image: linear-gradient(0deg, #0093e9 0%, #80d0c7 100%); }
+  .listaCursos .divh1 {
+    height: 150px;
+    display: flex;
+    background-image: url(./../img/navcarbono.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center; }
+    .listaCursos .divh1 .parte {
+      text-align: center;
+      font-size: 60px;
+      color: aliceblue;
+      width: 100%; }
+  .listaCursos .contTarj {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "gridTrainer gridBox gridPrepF"
+ "gridTenis gridCalis gridNutri";
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: center; }
+    .listaCursos .contTarj .cadaCurso {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      margin: 25px 25px 25px 25px;
+      background-color: white;
+      justify-content: space-between;
+      border-radius: 5px;
+      box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+      box-sizing: border-box; }
+      .listaCursos .contTarj .cadaCurso:hover {
+        box-shadow: #26394d 0px 20px 30px -10px;}
+      .listaCursos .contTarj .cadaCurso .imgCurso {
+        width: 100%;
+        border-radius: 3px;
+        height: 200px;
+        margin-bottom: 15px; }
+      .listaCursos .contTarj .cadaCurso .cartaTitu {
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: bold; }
+      .listaCursos .contTarj .cadaCurso .cuotas {
+        color: green;
+        margin-top: 15px; }
+      .listaCursos .contTarj .cadaCurso .suscribe {
+        margin-bottom: 10px;
+        align-items: center;
+        background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+        border: 0;
+        border-radius: 8px;
+        box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+        box-sizing: border-box;
+        color: #ffffff;
+        display: flex;
+        font-family: Phantomsans, sans-serif;
+        font-size: 18px;
+        justify-content: center;
+        line-height: 1em;
+        max-width: 100%;
+        min-width: 140px;
+        padding: 3px;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: all 0.3s; }
+      .listaCursos .contTarj .cadaCurso .suscribe:active,
+      .listaCursos .contTarj .cadaCurso .suscribe:hover {
+        outline: 0; }
+      .listaCursos .contTarj .cadaCurso .suscribe span {
+        background-color: #05062d;
+        padding: 16px 24px;
+        border-radius: 6px;
+        width: 100%;
+        height: 100%;
+        transition: 300ms; }
+        .listaCursos .contTarj .cadaCurso .suscribe span:hover {
+          background: none; }
+        .listaCursos .contTarj .cadaCurso .suscribe span:active {
+          transform: scale(0.9); }
+  .listaCursos .gridTrainer {
+    grid-area: gridTrainer; }
+  .listaCursos .gridBox {
+    grid-area: gridBox; }
+  .listaCursos .gridPrepF {
+    grid-area: gridPrepF; }
+  .listaCursos .gridTenis {
+    grid-area: gridtenis; }
+  .listaCursos .gridCalis {
+    grid-area: gridCalis; }
+  .listaCursos .gridNutri {
+    grid-area: gridNutri; }
+
+/* TERMINA ARTICULO DE CARTAS DE CADA CURSO */
+/* COMIENZA SOBRE NOSOTROS */
+.SobreNostotal {
+  height: 100%; }
+  .SobreNostotal .sobreNos {
+    background-color: #0093e9;
+    background-image: linear-gradient(180deg, #0093e9 0%, #80d0c7 100%);
+    padding: 50px 100px 50px 100px;
+    text-align: justify;
+    justify-content: center; }
+    .SobreNostotal .sobreNos .bienveP {
+      font-size: 25px; }
+      .divh1 {
+        height: 150px;
+        display: flex;
+        background-image: url(./../img/navcarbono.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        align-items: center;
+        justify-content: center;
+        }
+        .divh1 .parte {
+          text-align: center;
+          font-size: 60px;
+          color: aliceblue;
+          width: 100%;
+        }
+/* TERMINA SOBRE NOSOTROS */
+/* COMIENZA ANIDACION DE FOOTER */
 .totalRedes {
   background-image: url(./../img/footercarbono.webp);
   background-size: contain;
   border-style: hidden;
   height: 100%;
   background-size: cover;
-}
-.tituRedes {
-  color: white;
-  display: flex;
-  padding-top: 50px;
-  padding-left: 50px;
-}
-.redes {
-  display: flex;
-  padding-left: 50px;
-}
-.redes li {
-  margin-right: 5px;
-  list-style-type: none;
-  margin-top: 10px;
-}
+display:flex;
+justify-content: space-evenly;
+ }
+  .totalRedes .tituRedes {
+    color: white;
+    display: flex;
+    padding-top: 50px;
+    padding-left: 50px; }
+  .totalRedes .redes {
+    display: flex;
+    padding-left: 50px; }
+    .totalRedes .redes li {
+      margin-right: 5px;
+      list-style-type: none;
+      margin-top: 10px; }
+      .totalRedes .redes li .logos {
+        border-radius: 50%;
+        width: 25px;
+        height: 25px; }
 
-.logos {
-  border-radius: 50%;
-  width: 25px;
-  height: 25px;
-}
-footer {
-  display: flex;
-  justify-content: space-around;
-}
-.ubica li {
-  color: rgb(241, 241, 241);
-  list-style-type: none;
-  margin-top: 10px;
-  margin-right: 25px;
-}
 .ubica {
   display: flex;
-  margin: 25px 25px 25px 25px;
-}
-/* TERMINA FOOTER REDES */
+  margin: 25px 25px 25px 25px; }
+  .ubica ul li {
+    color: #f1f1f1;
+    list-style-type: none;
+    margin-top: 10px;
+    margin-right: 25px; }
 
-/* PAGINA INGRESO */
-.IniSesion {
-  display: flex;
-  align-content: center;
-  height: auto;
-  justify-content: center;
-
-}
-
-.fondoTo{
+/* anidacion PAGINA FORM INGRESO */
+.fondoTo {
   background-image: url(./../img/12-129971_m.jpg);
-  background-size: cover;
- 
+  background-size: cover; }
+  .fondoTo .IniSesion {
+    display: flex;
+    align-content: center;
+    height: auto;
+    justify-content: center; }
+    .fondoTo .IniSesion .contIngreso {
+      width: 50%;
+      height: 90%;
+      background-color: #414141;
+      border-style: solid;
+      margin: 25px 25px 25px 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 7px 13px 37px #000;
+      border-top: 4px solid #017bab;
+      color: aliceblue; }
+      .fondoTo .IniSesion .contIngreso .tituIni {
+        text-align: center;
+        font-weight: 700;
+        font-size: xx-large;
+        margin: 25px 10px 40px 10px; }
+      .fondoTo .IniSesion .contIngreso .clasex {
+        text-align: center; }
+      .fondoTo .IniSesion .contIngreso .butIngreso {
+        height: 50px;
+        width: 90px;
+        margin: 15px 5px 15px 5px;
+        color: white;
+        background-color: #017bab;
+        border-color: white; }
+
+/* TERMINA ANIDACION FORM INGRESO */
+
+/* pagina sedes */
+.contFondoSede{  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+.tamImgSede{
+  height: 500px!important;
 }
 
-.tituIni {
-  text-align: center;
-  font-weight: 700;
-  font-size: xx-large;
-  margin: 25px 10px 10px 10px;
-}
+/* pagina contacto */
 
-.contIngreso {
-  width: 70vh;
-  height: 90%;
-  background-color: rgb(65, 65, 65);
-  border-style: solid;
-  margin: 25px 25px 25px 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 7px 13px 37px #000;
-  border-top: 4px solid #017bab;
-  color: aliceblue;
+.contact {
+  width: 45%;
 }
-.inputForm {
-  border: 2px solid #017bab;
-}
-.contBot {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  height: 50%;
-  align-items: center;
-}
-.ingre {
-  padding: 5px 5px 5px 5px;
-  width: 150px;
-  text-align: center;
-}
-.butIngreso {
-  height: 50px;
-  width: 90px;
-  margin: 15px 5px 15px 5px;
-  color: white;
-  background-color: #017bab;
-  border-color: white;
-}
-/* TERMINA PAGINA REGISTRO */
-
-article.articTotal {
-  background-color: aqua;
-  display: flex;
-  background-color: #0093E9;
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-  padding-top: 50px;
-  padding-bottom: 50px;
-  align-items: center;
-  height: 100%;
-}
-.tituP {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-}
-.bienvenido {
-  font-size: 60px;
-  font-weight: bold;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.bienveP {
-  text-align: justify;
-  margin: 8px 10px 30px 25px;
-  width: auto;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  word-spacing: 5px;
-  line-height: 30px;
-  font-size: 1.3rem;
-}
-
-.contTarj {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-    "gridTrainer gridBox gridPrepF"
-    "gridTenis gridCalis gridNutri";
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  justify-items: center;
-}
-.gridTrainer {
-  grid-area: gridTrainer;
-}
-.gridBox {
-  grid-area: gridBox;
-}
-.gridPrepF {
-  grid-area: gridPrepF;
-}
-.gridTenis {
-  grid-area: gridtenis;
-}
-.gridCalis {
-  grid-area: gridCalis;
-}
-.gridNutri {
-  grid-area: gridNutri;
-}
-
-.listado {
-  display: flex;
-  flex-wrap: wrap;
-}
-.olvi {
-  margin-top: 30px;
-  width: 150px;
-  font-size: 12px;
-  text-align: center;
-  margin-bottom: 30px;
-}
-.olvi:hover {
-  color: #017bab;
-}
-
-
-.imgCurso {
-  width: 100%;
-  border-radius: 3px;
-  height: 200px;
-  margin-bottom: 15px;
-}
-.cadaCurso {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  margin: 25px 25px 25px 25px;
-  background: rgb(255, 255, 255);
-  border-radius: 0.4em;
-  box-shadow: 0.3em 0.3em 0.7em #612ec215;
-  transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border: rgb(219, 219, 219) 0.2em solid;
- }
- 
- .cadaCurso:hover {
-  border: #1e3d66 0.2em solid;
- }
-
- 
-
-.cuotas {
-  color: green;
-  margin-top: 15px;
-}
-
-.cuotas {
-  display: inline-block;
-  margin: 0 0.5rem;
-
-  animation: bounce; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /* don't forget to set a duration! */
-  animation-iteration-count:infinite;
-  animation-direction: alternate-reverse;
-}
-
-.cadaCurso p {
-  margin-bottom: 20px;
-}
-
-.contFondoSede{
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);}
-
- .tamImgSede{
-  height: 500px;
-  width: 100%;
- }
-.articleTotal{
-  display: flex;
-  justify-content: space-evenly;
-  height: 550px;
-  align-items: center;}
-
-/* PAGINA CONTACTO */
-@keyframes color-change-2x {
-  0% {
-    background: #19dcea;
-  }
-  100% {
-    background: #b22cff;
-  }
-}
-
 .inputarea {
   height: 150px;
   width: 300px;
@@ -470,11 +319,20 @@ div.clasex ul li {
   display: inline;
 }
 label {
-  display: inline;
+  display: inline;}
+.contBot{
+  display: flex;
+  flex-direction: column;
 }
-/* TERMINA PAGINA CONTACTO */
 
-/* -------------------- media querie-------------- */
+
+
+
+
+
+
+
+
 @media screen and (max-width: 480px) {
   * {
     margin: 0;
@@ -485,7 +343,7 @@ label {
     width: 100%;
   }
 
-  .contTarj {
+  .listaCursos .contTarj {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -493,11 +351,31 @@ label {
       "gridTrainer gridBox"
       "gridPrepF gridTenis"
       " gridCalis gridNutri";
-    grid-column-gap: 5px;
+    grid-column-gap: 1px;
     grid-row-gap: 5px;
     justify-items: center;
     background-image: url(./../img/fondolight.jpg);
   }
+  .gridTrainer {
+    grid-area: gridTrainer; }
+  
+  .gridBox {
+    grid-area: gridBox; }
+  
+  .gridPrepF {
+    grid-area: gridPrepF; }
+  
+  .gridTenis {
+    grid-area: gridtenis; }
+  
+  .gridCalis {
+    grid-area: gridCalis; }
+  
+  .gridNutri {
+    grid-area: gridNutri; }
+  
+
+
 
   .title {
     font-size: 30px;
@@ -507,21 +385,23 @@ label {
     display: block;
     height: 100%;
   }
-  .tituP {
-    display: block;
-    width: auto;
+  .articTotal .tituP {  
+   display: block;
+    width: 100%;
     height: auto;
-    font-size-adjust: initial;
+  }
+  .articTotal .tituP .bienveP{
+    padding: 10px 15px 10px 15px;
+    display: block;
+    font-size: 15px;
+  }
+  .articTotal .contVideo{
+    width: 100%;
+    height: 300px;
   }
   .bienvenido {
     display: block;
     text-align: center;
-  }
-  .bienveP {
-    display: block;
-    font-size: 13px;
-    margin: 0px;
-    padding: 0px;
   }
 
   .parte {
@@ -535,13 +415,13 @@ label {
     background-size: cover;
   }
 
-  .cadaCurso {
-    height: auto;
-    width: auto;
+  .listaCursos .contTarj .cadaCurso {
+    height: 90%;
+    width: 90%;
     justify-content: space-between;
   }
   .cadaCurso p {
-    font-size: 14px;
+    font-size: 13px;
     margin-bottom: 10px;
     text-align: center;
   }
@@ -550,12 +430,12 @@ label {
     margin-bottom: 10px;
   }
 
-  .sobreNos {
-    padding: 15px 10px 15px 10px;
+  .SobreNostotal .sobreNos {
+    padding: 15px 20px 15px 20px;
   }
 
-  .sobreNos p {
-    font-size: 13px;
+  .SobreNostotal .sobreNos .bienveP {
+    font-size: 15px;
   }
   .contVideo{
     align-items: center;
@@ -563,15 +443,17 @@ label {
     width: 100%;
     height: 300px;
 }
+  
+.totalRedes .tituRedes{
 
-  .tituRedes {
-    display: block;
+   display: block;
     text-align: center;
     margin: 0px;
     padding: 10px;
     font-size: medium;
   }
-  .redes {
+  
+  .totalRedes .redes {
     padding-left: 0px;
     justify-content: center;
   }
@@ -596,7 +478,22 @@ label {
     width: 90%;
     height: 90%;
   }
+ 
 
+
+.totalSede{
+  display:block;
+}
+.imgSede{
+  width: 90%;
+}
+.totalMiniImage{
+justify-content: space-around;
+}
+.sedesSedes{
+  width: 300px;
+  height: 250px;
+}
 /* formulario de inicio de sesion responsive */
 .IniSesion{
   width: 100%;
@@ -617,7 +514,18 @@ ul li a.listaIndex{
 .navegador ul li a.botMenu {
   display: none;
 }
-/* media querie sedes*/
 
-
+.articleTotal{
+  display:block;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+  .tamImgSede{
+    height: 250px!important;
+  }
+  
+  .fondoTo .IniSesion .contIngreso{
+    width: 80%;
+  }
 }
