@@ -1,0 +1,39 @@
+%barras {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  background-color: rgb(65, 65, 65);
+  margin-bottom: 5px;
+}
+
+$cartas: (
+  fondo: white,
+  margen: 25px 25px 25px 25px,
+  borde: 5px,
+  anchura: 70%,
+);
+
+$boton: (
+  alto: 50px,
+  ancho: 90px,
+  margen: 15px 5px 15px 5px,
+  colors: white,
+  fondo: #017bab,
+  borde: white,
+);
+.butIngreso {
+  height: 50px;
+  width: 90px;
+  margin: 15px 5px 15px 5px;
+  color: white;
+  background-color: #017bab;
+  border-color: white;
+}
+
+@mixin botontamano($ancho, $alto, $borde) {
+ 
+  height: $ancho;
+  width: $alto;
+  border-radius: $borde;
+}

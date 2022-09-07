@@ -1,3 +1,4 @@
+@import "./../layout/variables";
 @import "./../layout/grid";
 /* empieza navbar */
 * {
@@ -39,9 +40,10 @@ a {
     }
     .bienveP {
       text-align: justify;
-      margin: 8px 10px 30px 10px;
-      width: auto;
       padding: 0px 2px 20px 30px;
+      width: auto; 
+      line-height: 30px;
+      font-size: 20px
     }
   }
 
@@ -87,17 +89,17 @@ a {
     grid-row-gap: 20px;
     justify-items: center;
     .cadaCurso {
+      background-color: map-get($map: $cartas, $key: fondo);
+      margin:map-get($map: $cartas, $key: margen);
+      border-radius:map-get($map: $cartas, $key: borde); 
+      width: map-get($map: $cartas, $key: anchura);
       align-items: center;
       display: flex;
       flex-direction: column;
-      width: 70%;
-      margin: 25px 25px 25px 25px;
-      background-color: white;
       justify-content: space-between;
-      border-radius: 10px;
       box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
       box-sizing: border-box;
-      &cadaCurso:hover {
+      &:hover {
         box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
       }
       .imgCurso {
@@ -116,7 +118,7 @@ a {
         margin-top: 15px;
       }
       .suscribe {
-        padding-bottom: 10px;
+        margin-bottom: 10px;
         align-items: center;
         background-image: linear-gradient(
           144deg,
@@ -144,13 +146,11 @@ a {
         white-space: nowrap;
         cursor: pointer;
         transition: all 0.3s;
-      }
-
-      .suscribe:active,
-      .suscribe:hover {
+             &:active,
+       &:hover {
         outline: 0;
       }
-
+    }
        span {
         background-color: rgb(5, 6, 45);
         padding: 16px 24px;
@@ -158,7 +158,7 @@ a {
         width: 100%;
         height: 100%;
         transition: 300ms;
-        &hover span {
+        &:hover {
           background: none;
         }
         &active {
@@ -206,19 +206,19 @@ a {
       width: 100%;
     }
   height: 100%;
-  .sobreNos {
-    background-color: #0093e9;
-    background-image: linear-gradient(180deg, #0093e9 0%, #80d0c7 100%);
-
-    padding: 50px 100px 50px 100px;
-    text-align: justify;
-    justify-content: center;
+ 
     .bienveP {
       font-size: 25px;
     }
   }
+  .sobreNos {
+    background-color: #0093e9;
+    background-image: linear-gradient(180deg, #0093e9 0%, #80d0c7 100%);
+    padding: 50px 100px 50px 100px;
+    text-align: justify;
+    justify-content: center;
 }
-
+}
 /* TERMINA SOBRE NOSOTROS */
 
 /* COMIENZA ANIDACION DE FOOTER */
@@ -229,6 +229,8 @@ a {
   border-style: hidden;
   height: 100%;
   background-size: cover;
+display:flex;
+justify-content: space-evenly;
   .tituRedes {
     color: white;
     display: flex;
@@ -289,19 +291,70 @@ a {
         font-size: xx-large;
         margin: 25px 10px 10px 10px;
       }
+
       .clasex {
         text-align: center;
         
       }
       .butIngreso {
-        height: 50px;
-        width: 90px;
-        margin: 15px 5px 15px 5px;
-        color: white;
-        background-color: #017bab;
-        border-color: white;
+        height:map-get($map: $boton, $key: alto);
+        width: map-get($map: $boton, $key: ancho);
+        margin:map-get($map: $boton, $key: margen);
+        color: map-get($map: $boton, $key: colors);
+        background-color: map-get($map: $boton, $key: fondo );
+        border-color: map-get($map: $boton, $key: borde);
       }
     }
   }
 }
-/* TERMINA ANIDACION FORM INGRESO */
+
+
+/* anidacion pagina contacto */
+.fondoTo{
+  background-image: url(./../img/12-129971_m.jpg);
+  background-size: cover;
+  .IniSesion {
+    display: flex;
+    align-content: center;
+    height: auto;
+    justify-content: center;
+    .contIngreso {
+      padding:40px 40px 40px 40px;
+      height: 90%;
+      background-color: #414141;
+      border-style: solid;
+      margin: 25px 25px 25px 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 7px 13px 37px #000;
+      border-top: 4px solid #017bab;
+      color: aliceblue;
+      .tituIni {
+        text-align: center;
+        font-weight: 700;
+        font-size: xx-large;
+        margin: 25px 10px 40px 10px; }
+        .inputCont {
+         @extend %barras;
+        }
+        .inputarea {
+          height: 150px;
+          width: 300px;
+        }
+        .butIngreso2 {
+        
+          margin: 15px 5px 15px 5px;
+          color: white;
+          background-color: #017bab;
+          border-color: white; 
+          @include botontamano (60px, 100px, 10px);  
+        }
+       }
+      }
+  }
+
+/* pagina registro */
+
+
+
