@@ -74,22 +74,23 @@ a {
     align-items: center;
     width: 50%; }
     .articTotal .tituP .bienvenido {
-      font-size: 60px;
+      font-size: 4em;
       margin: 5px 5px 5px 5px;
       padding: 5% 5% 5% 5%;
       font-weight: bold; }
     .articTotal .tituP .bienveP {
       text-align: justify;
-      padding: 0px 2px 20px 30px;
+      padding: 0px 10px 20px 30px;
       width: auto;
       line-height: 30px;
-      font-size: 20px; }
+      font-size: 1.2em; }
   .articTotal .contVideo {
     align-items: center;
     justify-content: center;
     width: 50%;
     height: 100%;
-    display: flex; }
+    display: flex;
+    margin: 10px 10px 10px 10px }
 
 /* FINAL ARTICULO DE BIENVENIDA */
 /* COMIENZA ARTICULO DE CARTAS DE CADA CURSO */
@@ -148,17 +149,15 @@ a {
         align-items: center;
         background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
         border: 0;
-        border-radius: 8px;
+        border-radius: 4px;
         box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
         box-sizing: border-box;
         color: #ffffff;
         display: flex;
         font-family: sans-serif;
-        font-size: 18px;
         justify-content: center;
         line-height: 1em;
         max-width: 100%;
-        min-width: 140px;
         padding: 3px;
         text-decoration: none;
         user-select: none;
@@ -172,7 +171,7 @@ a {
       .listaCursos .contTarj .cadaCurso span {
         background-color: #05062d;
         padding: 16px 24px;
-        border-radius: 6px;
+        border-radius: 4px;
         width: 100%;
         height: 100%;
         transition: 300ms; }
@@ -203,14 +202,15 @@ a {
   background-attachment: fixed;
   align-items: center;
   justify-content: center;
-  height: 100%; }
+  height: 150px; }
   .SobreNostotal .divh1 .parte {
     text-align: center;
-    font-size: 60px;
+    font-size: 4em;
     color: aliceblue;
-    width: 100%; }
+    width: 100%; 
+   }
   .SobreNostotal .sobreNos .bienveP {
-    font-size: 25px; }
+    font-size: 1.2em; }
 
 .SobreNostotal .sobreNos{
   background-color: #0093e9;
@@ -256,39 +256,39 @@ a {
     margin-right: 25px; }
 
 /* anidacion PAGINA FORM INGRESO */
-.fondoTo {
-  background-image: url(./../img/12-129971_m.jpg);
+.fondoTo#fondoRegistro {
+  background-image: url(./../img/fondoregistro.jpg);
   background-size: cover; }
-  .fondoTo .IniSesion {
+  .fondoTo#fondoRegistro  .IniSesion {
     display: flex;
     align-content: center;
     height: auto;
     justify-content: center; }
-    .fondoTo .IniSesion .contIngreso {
-      width: 70vh;
+    .fondoTo#fondoRegistro  .IniSesion .contIngreso {
       height: 90%;
-      background-color: #414141;
+      background-color: #1f1e1e;
       border-style: solid;
       margin: 25px 25px 25px 25px;
       display: flex;
       flex-direction: column;
       align-items: center;
       box-shadow: 7px 13px 37px #000;
-      border-top: 4px solid #017bab;
+      border-top: 4px solid #780583;
+      border-right: 4px solid #4d1452;
       color: aliceblue; }
-      .fondoTo .IniSesion .contIngreso .tituIni {
+      .fondoTo#fondoRegistro .IniSesion .contIngreso .tituIni {
         text-align: center;
         font-weight: 700;
         font-size: xx-large;
         margin: 25px 10px 10px 10px; }
-      .fondoTo .IniSesion .contIngreso .clasex {
+      .fondoTo#fondoRegistro .IniSesion .contIngreso .clasex {
         text-align: center; }
-      .fondoTo .IniSesion .contIngreso .butIngreso {
+      .fondoTo#fondoRegistro .IniSesion .contIngreso .butIngreso {
         height: 50px;
         width: 90px;
         margin: 15px 5px 15px 5px;
         color: white;
-        background-color: #017bab;
+        background-color: #220b1e;
         border-color: white; }
 
 /* anidacion pagina contacto */
@@ -332,7 +332,9 @@ a {
 /* pagina registro */
 
 .contFondoSede{
-  background-color: #a8e6eb;
+  background-color: #0093E9;
+background-image: linear-gradient(225deg, #0093E9 10%, #80D0C7 50%, #ffffff 100%);
+
 }
 .tamImgSede{
   height: 500px!important;
@@ -341,16 +343,12 @@ a {
 ul li{
   list-style: none;
 }
+ .direcSede{
+      width: 80%!important;
+    }
 
-@media screen and (max-width: 480px) {
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    height: 100%;
-    width: 100%;
-  }
+
+@media screen and (max-width: 800px) {
 
   .listaCursos .contTarj {
     display: grid;
@@ -382,159 +380,234 @@ ul li{
   
   .gridNutri {
     grid-area: gridNutri; }
+    article.articTotal {
+      display: block;
+      height: 100%;
+    }
+    .articTotal .tituP {  
+     display: block;
+      width: 100%;
+      height: auto;
+      text-align: center;
+    }
+    .articTotal .tituP .bienveP{
+      padding: 10px 15px 10px 15px;
+      display: block;
+      font-size: 15px;
+    }
+    .articTotal .contVideo{
+      width: 100%;
+      height: 300px;
+    }
+    .ubica {
+      display: block;
+      margin: 25px 25px 25px 25px;
+    }
+    .totalRedes .redes {
+      padding-left: 0px;
+      justify-content: center;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 50px;
+    }
+    .cadaCurso p {
+      font-size: 1em;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .tamImgSede{
+      height: 350px!important;
+    }
+    .direcSede{
+      height: 250px!important;
+    }
+    }
+
+  @media screen and (max-width: 480px) {
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      height: 100%;
+      width: 100%;
+    }
   
-
-
-
-  .title {
-    font-size: 30px;
-  }
-
-  article.articTotal {
-    display: block;
-    height: 100%;
-  }
-  .articTotal .tituP {  
-   display: block;
-    width: 100%;
-    height: auto;
-  }
-  .articTotal .tituP .bienveP{
-    padding: 10px 15px 10px 15px;
-    display: block;
-    font-size: 15px;
-  }
-  .articTotal .contVideo{
-    width: 100%;
-    height: 300px;
-  }
-  .bienvenido {
-    display: block;
-    text-align: center;
-  }
-
-  .parte {
-    width: 100%;
-    font-size: 30px;
-  }
-
-  .totalRedes {
-    display: block;
-    height: 100%;
-    background-size: cover;
-  }
-
-  .listaCursos .contTarj .cadaCurso {
-    height: 90%;
-    width: 90%;
-    justify-content: space-between;
-  }
-  .cadaCurso p {
-    font-size: 13px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  .cartaTitu {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-
-  .SobreNostotal .sobreNos {
-    padding: 15px 20px 15px 20px;
-  }
-
-  .SobreNostotal .sobreNos .bienveP {
-    font-size: 15px;
-  }
-  .contVideo{
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 300px;
-}
+    .listaCursos .contTarj {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        "gridTrainer gridBox"
+        "gridPrepF gridTenis"
+        " gridCalis gridNutri";
+      grid-column-gap: 1px;
+      grid-row-gap: 5px;
+      justify-items: center;
+      background-image: url(./../img/fondolight.jpg);
+    }
+    .gridTrainer {
+      grid-area: gridTrainer; }
+    
+    .gridBox {
+      grid-area: gridBox; }
+    
+    .gridPrepF {
+      grid-area: gridPrepF; }
+    
+    .gridTenis {
+      grid-area: gridtenis; }
+    
+    .gridCalis {
+      grid-area: gridCalis; }
+    
+    .gridNutri {
+      grid-area: gridNutri; }
+    
+      .totalRedes .redes {
+        padding-left: 0px;
+        justify-content: center;
+        display:flex;
+        flex-direction: row;
+      }
   
-.totalRedes .tituRedes{
-
-   display: block;
-    text-align: center;
-    margin: 0px;
-    padding: 10px;
-    font-size: medium;
-  }
   
-  .totalRedes .redes {
-    padding-left: 0px;
-    justify-content: center;
+    .title {
+      font-size: 30px;
+    }
+  
+    article.articTotal {
+      display: block;
+      height: 100%;
+    }
+    .articTotal .tituP {  
+     display: block;
+      width: 100%;
+      height: auto;
+    }
+    .articTotal .tituP .bienveP{
+      padding: 10px 15px 10px 15px;
+      display: block;
+      font-size: 15px;
+    }
+    .articTotal .contVideo{
+      width: 100%;
+      height: 300px;
+      margin: 0px;
+    }
+    .articTotal .tituP .bienvenido {
+      display: block;
+      text-align: center;
+      font-size: 3em;
+    }
+  
+    .parte {
+      width: 100%;
+      font-size: 30px;
+    }
+  
+    .totalRedes {
+      display: block;
+      height: 100%;
+      background-size: cover;
+    }
+  
+    .listaCursos .contTarj .cadaCurso {
+      height: 90%;
+      width: 90%;
+      justify-content: space-between;
+    }
+    .cadaCurso p {
+      font-size: 13px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .cartaTitu {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  
+    .SobreNostotal .sobreNos {
+      padding: 15px 20px 15px 20px;
+    }
+  
+    .SobreNostotal .sobreNos .bienveP {
+      font-size: 15px;
+    }
+    .contVideo{
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 300px;
   }
-  .redes li {
-    font-size: 12px;
+    
+  .totalRedes .tituRedes{
+  
+     display: block;
+      text-align: center;
+      margin: 0px;
+      padding: 10px;
+      font-size: medium;
+    }
+    
+    .totalRedes .redes {
+      padding-left: 0px;
+      justify-content: center;
+    }
+    .redes li {
+      font-size: 12px;
+    }
+    .ubica {
+      padding: 25px 25px 0px 25px;
+      margin: 0px;
+      justify-content: center;
+      display: flex;
+      height: 100%;
+padding-bottom: 20px;
+    }
+    .ubi {
+      font-size: 13px;
+    }
+  
+    .imgCurso {
+      margin-bottom: 2px;
+      height: 150px;
+    }
+  
+    iframe {
+      width: 90%;
+      height: 90%;
+    }
+  .IniSesion{
+    width: 100%;
   }
-  .ubica {
-    padding: 25px 25px 25px 25px;
-    margin: 0px;
-    justify-content: center;
+  .contIngreso{
+    width: 89%;
   }
-  .ubi {
-    font-size: 13px;
-  }
-
-  .imgCurso {
-    margin-bottom: 2px;
+  .videoQuerie{
+    width: 150px;
     height: 150px;
   }
 
-  iframe {
-    width: 90%;
-    height: 90%;
+  ul li a.listaIndex{
+    display:none;
   }
- 
 
-
-.totalSede{
-  display:block;
-}
-.imgSede{
-  width: 90%;
-}
-.totalMiniImage{
-justify-content: space-around;
-}
-.sedesSedes{
-  width: 300px;
-  height: 250px;
-}
-/* formulario de inicio de sesion responsive */
-.IniSesion{
-  width: 100%;
-}
-.contIngreso{
-  width: 89%;
-}
-.videoQuerie{
-  width: 150px;
-  height: 150px;
-}
-.navegador{
-  display:contents;
-}
-ul li a.listaIndex{
-  display:none;
-}
-.navegador ul li a.botMenu {
-  display: none;
-}
-
-.articleTotal{
-  display:block;
-  height: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  }
-  .tamImgSede{
-    height: 250px!important;
-  }
   
-  .fondoTo .IniSesion .contIngreso{
-    width: 80%;
+  .articleTotal{
+    display:block;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+    .tamImgSede{
+      height: 250px!important;
+    }
+    
+    .fondoTo .IniSesion .contIngreso{
+      width: 80%;
+    }
+    .direcSede{
+      width: 80%!important;
+    }
   }
-}
