@@ -4,7 +4,8 @@
   border-right: 0px;
   border-bottom: 2px solid black;
   background-color: #414141;
-  margin-bottom: 14px; }
+  margin-bottom: 14px;
+}
 
 .butIngreso {
   height: 50px;
@@ -12,51 +13,31 @@
   margin: 15px 5px 15px 5px;
   color: white;
   background-color: #017bab;
-  border-color: white; }
+  border-color: white;
+}
 
-.contTarj {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "gridTrainer gridBox gridPrepF"
- "gridTenis gridCalis gridNutri";
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  justify-items: center; }
 
-.gridTrainer {
-  grid-area: gridTrainer; }
-
-.gridBox {
-  grid-area: gridBox; }
-
-.gridPrepF {
-  grid-area: gridPrepF; }
-
-.gridTenis {
-  grid-area: gridtenis; }
-
-.gridCalis {
-  grid-area: gridCalis; }
-
-.gridNutri {
-  grid-area: gridNutri; }
 
 /* empieza navbar */
 * {
   margin: 0;
   padding: 0;
   font-family: "Roboto Slab", serif;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+}
 
 .navbar-titulo {
-  font-size: 3rem; }
+  font-size: 3rem;
+}
 
 a {
   text-decoration: none;
-  color: aliceblue; }
-  a .nav-link {
-    font-weight: bold; }
+  color: aliceblue;
+}
+
+a .nav-link {
+  font-weight: bold;
+}
 
 /* final navbar */
 /* COMIENZA ARTICULO DE BIENVENIDA */
@@ -67,131 +48,191 @@ a {
   padding-top: 50px;
   padding-bottom: 50px;
   align-items: center;
-  height: 100%; }
-  .articTotal .tituP {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%; }
-    .articTotal .tituP .bienvenido {
-      font-size: 4em;
-      margin: 5px 5px 5px 5px;
-      padding: 5% 5% 5% 5%;
-      font-weight: bold; }
-    .articTotal .tituP .bienveP {
-      text-align: justify;
-      padding: 0px 10px 20px 30px;
-      width: auto;
-      line-height: 30px;
-      font-size: 1.2em; }
-  .articTotal .contVideo {
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    margin: 10px 10px 10px 10px }
+  height: 100%;
+}
+
+.articTotal .tituP {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.articTotal .tituP .bienvenido {
+  font-size: 4em;
+  margin: 5px 5px 5px 5px;
+  padding: 5% 5% 5% 5%;
+  font-weight: bold;
+}
+
+.articTotal .tituP .bienveP {
+  text-align: justify;
+  padding: 0px 10px 20px 30px;
+  width: auto;
+  line-height: 30px;
+  font-size: 1.2em;
+}
+
+.articTotal .contVideo {
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  margin: 10px 10px 10px 10px
+}
 
 /* FINAL ARTICULO DE BIENVENIDA */
 /* COMIENZA ARTICULO DE CARTAS DE CADA CURSO */
 .listaCursos {
   background-color: #0093e9;
-  background-image: linear-gradient(0deg, #0093e9 0%, #80d0c7 100%); }
-  .listaCursos .divh1 {
-    height: 150px;
-    display: flex;
-    background-image: url(./../img/navcarbono.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    align-items: center;
-    justify-content: center; }
-    .listaCursos .divh1 .parte {
-      text-align: center;
-      font-size: 60px;
-      color: aliceblue;
-      width: 100%; }
-  .listaCursos .contTarj {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "gridTrainer gridBox gridPrepF"
- "gridTenis gridCalis gridNutri";
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    justify-items: center; }
-    .listaCursos .contTarj .cadaCurso {
-      background-color: white;
-      margin: 25px 25px 25px 25px;
-      border-radius: 5px;
-      width: 70%;
-      border:3px solid white;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-      box-sizing: border-box; }
-      .listaCursos .contTarj .cadaCurso:hover {
-        box-shadow: #26394d 0px 20px 30px -10px; }
-      .listaCursos .contTarj .cadaCurso .imgCurso {
-        width: 100%;
-        border-radius: 3px;
-        height: 200px;
-        margin-bottom: 15px; }
-      .listaCursos .contTarj .cadaCurso .cartaTitu {
-        margin-bottom: 20px;
-        text-align: center;
-        font-weight: bold; }
-      .listaCursos .contTarj .cadaCurso .cuotas {
-        color: green;
-        margin-top: 15px; }
-      .listaCursos .contTarj .cadaCurso .suscribe {
-        margin-bottom: 10px;
-        align-items: center;
-        background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
-        border: 0;
-        border-radius: 4px;
-        box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-        box-sizing: border-box;
-        color: #ffffff;
-        display: flex;
-        font-family: sans-serif;
-        justify-content: center;
-        line-height: 1em;
-        max-width: 100%;
-        padding: 3px;
-        text-decoration: none;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        white-space: nowrap;
-        cursor: pointer;
-        transition: all 0.3s; }
-        .listaCursos .contTarj .cadaCurso .suscribe:active, .listaCursos .contTarj .cadaCurso .suscribe:hover {
-          outline: 0; }
-      .listaCursos .contTarj .cadaCurso span {
-        background-color: #05062d;
-        padding: 16px 24px;
-        border-radius: 4px;
-        width: 100%;
-        height: 100%;
-        transition: 300ms; }
-        .listaCursos .contTarj .cadaCurso span:hover {
-          background: none; }
-        .listaCursos .contTarj .cadaCurso spanactive {
-          transform: scale(0.9); }
-  .listaCursos .gridTrainer {
-    grid-area: gridTrainer; }
-  .listaCursos .gridBox {
-    grid-area: gridBox; }
-  .listaCursos .gridPrepF {
-    grid-area: gridPrepF; }
-  .listaCursos .gridTenis {
-    grid-area: gridtenis; }
-  .listaCursos .gridCalis {
-    grid-area: gridCalis; }
-  .listaCursos .gridNutri {
-    grid-area: gridNutri; }
+  background-image: linear-gradient(0deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.listaCursos .divh1 {
+  height: 150px;
+  display: flex;
+  background-image: url(./../img/navcarbono.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  align-items: center;
+  justify-content: center;
+}
+
+.listaCursos .divh1 .parte {
+  text-align: center;
+  font-size: 60px;
+  color: aliceblue;
+  width: 100%;
+}
+
+.listaCursos .contTarj {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "gridTrainer gridBox gridPrepF"
+    "gridTenis gridCalis gridNutri"
+    "gridYoga gridMasajes gridgap";
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: center;
+}
+
+.listaCursos .contTarj .cadaCurso {
+  background-color: white;
+  margin: 25px 25px 25px 25px;
+  border-radius: 5px;
+  width: 70%;
+  border: 3px solid white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+}
+
+.listaCursos .contTarj .cadaCurso:hover {
+  box-shadow: #26394d 0px 20px 30px -10px;
+}
+
+.listaCursos .contTarj .cadaCurso .imgCurso {
+  width: 100%;
+  border-radius: 3px;
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+.listaCursos .contTarj .cadaCurso .cartaTitu {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.listaCursos .contTarj .cadaCurso .cuotas {
+  color: green;
+  margin-top: 15px;
+}
+
+.listaCursos .contTarj .cadaCurso .suscribe {
+  margin-bottom: 10px;
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 4px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: sans-serif;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.listaCursos .contTarj .cadaCurso .suscribe:active,
+.listaCursos .contTarj .cadaCurso .suscribe:hover {
+  outline: 0;
+}
+
+.listaCursos .contTarj .cadaCurso span {
+  background-color: #05062d;
+  padding: 16px 24px;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.listaCursos .contTarj .cadaCurso span:hover {
+  background: none;
+}
+
+.listaCursos .contTarj .cadaCurso span:active {
+  transform: scale(0.9);
+}
+
+.listaCursos .gridTrainer {
+  grid-area: gridTrainer;
+}
+
+.listaCursos .gridBox {
+  grid-area: gridBox;
+}
+
+.listaCursos .gridPrepF {
+  grid-area: gridPrepF;
+}
+
+.listaCursos .gridTenis {
+  grid-area: gridtenis;
+}
+
+.listaCursos .gridCalis {
+  grid-area: gridCalis;
+}
+
+.listaCursos .gridNutri {
+  grid-area: gridNutri;
+}
+.listaCursos .gridYoga {
+  grid-area: gridYoga;
+}
+.listaCursos .gridMasajes {
+  grid-area: gridMasajes;
+}
+.listaCursos .gridgap {
+  grid-area: gridgap;
+}
 
 /* TERMINA ARTICULO DE CARTAS DE CADA CURSO */
 /* COMIENZA SOBRE NOSOTROS */
@@ -203,22 +244,44 @@ a {
   background-attachment: fixed;
   align-items: center;
   justify-content: center;
-  height: 150px; }
-  .SobreNostotal .divh1 .parte {
-    text-align: center;
-    font-size: 4em;
-    color: aliceblue;
-    width: 100%; 
-   }
-  .SobreNostotal .sobreNos .bienveP {
-    font-size: 1.2em; }
+  height: 150px;
+}
 
-.SobreNostotal .sobreNos{
+.SobreNostotal .divh1 .parte {
+  text-align: center;
+  font-size: 4em;
+  color: aliceblue;
+  width: 100%;
+}
+
+.SobreNostotal .sobreNos .bienveP {
+  font-size: 1.2em;
+  line-height: 40px;
+}
+
+.SobreNostotal .sobreNos {
   background-color: #0093e9;
   background-image: linear-gradient(180deg, #0093e9 0%, #80d0c7 100%);
-  padding: 50px 100px 50px 100px;
+  padding: 50px 70px 50px 70px;
   text-align: justify;
-  justify-content: center; }
+  justify-content: center;
+  
+}
+.SobreNostotal .sobreNos .detalles-curso {
+  width: 100%;
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+.SobreNostotal .sobreNos .detalles-curso .iconodetallesCurso{
+  width: 10%;  
+}
+.SobreNostotal .sobreNos .detalles-curso .detalles-curso-titu{
+  font-weight: bold;
+}
+
 
 /* TERMINA SOBRE NOSOTROS */
 /* COMIENZA ANIDACION DE FOOTER */
@@ -229,127 +292,276 @@ a {
   height: 100%;
   background-size: cover;
   display: flex;
-  justify-content: space-evenly; }
-  .totalRedes .tituRedes {
-    color: white;
-    display: flex;
-    padding-top: 50px;
-    padding-left: 50px; }
-  .totalRedes .redes {
-    display: flex;
-    padding-left: 50px; }
-    .totalRedes .redes li {
-      margin-right: 5px;
-      list-style-type: none;
-      margin-top: 10px; }
-      .totalRedes .redes li .logos {
-        border-radius: 50%;
-        width: 25px;
-        height: 25px; }
+  justify-content: space-evenly;
+}
+
+.totalRedes .tituRedes {
+  color: white;
+  display: flex;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.totalRedes .redes {
+  display: flex;
+  padding-left: 50px;
+}
+
+.totalRedes .redes li {
+  margin-right: 5px;
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.totalRedes .redes li .logos {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
 
 .ubica {
   display: flex;
-  margin: 25px 25px 25px 25px; }
-  .ubica ul li {
-    color: #f1f1f1;
-    list-style-type: none;
-    margin-top: 10px;
-    margin-right: 25px; }
+  margin: 25px 25px 25px 25px;
+}
+
+.ubica ul li {
+  color: #f1f1f1;
+  list-style-type: none;
+  margin-top: 10px;
+  margin-right: 25px;
+}
 
 /* anidacion PAGINA FORM INGRESO */
 .fondoTo#fondoRegistro {
   background-image: url(./../img/fondoregistro.jpg);
-  background-size: cover; }
-  .fondoTo#fondoRegistro  .IniSesion {
-    display: flex;
-    align-content: center;
-    height: auto;
-    justify-content: center; }
-    .fondoTo#fondoRegistro  .IniSesion .contIngreso {
-      height: 90%;
-      background-color: #1f1e1e;
-      border-style: solid;
-      margin: 25px 25px 25px 25px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      box-shadow: 7px 13px 37px #000;
-      border-top: 4px solid #780583;
-      border-right: 4px solid #4d1452;
-      color: aliceblue; }
-      .fondoTo#fondoRegistro .IniSesion .contIngreso .tituIni {
-        text-align: center;
-        font-weight: 700;
-        font-size: xx-large;
-        margin: 25px 10px 10px 10px; }
-      .fondoTo#fondoRegistro .IniSesion .contIngreso .clasex {
-        text-align: center; }
-      .fondoTo#fondoRegistro .IniSesion .contIngreso .butIngreso {
-        height: 50px;
-        width: 90px;
-        margin: 15px 5px 15px 5px;
-        color: white;
-        background-color: #220b1e;
-        border-color: white; }
+  background-size: cover;
+}
+
+.fondoTo#fondoRegistro .IniSesion {
+  display: flex;
+  align-content: center;
+  height: auto;
+  justify-content: center;
+}
+
+.fondoTo#fondoRegistro .IniSesion .contIngreso {
+  height: 90%;
+  background-color: #1f1e1e;
+  border-style: solid;
+  margin: 25px 25px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 7px 13px 37px #000;
+  border-top: 4px solid #652583;
+  border-right: 4px solid #271329;
+  color: aliceblue;
+}
+
+.fondoTo#fondoRegistro .IniSesion .contIngreso .tituIni {
+  text-align: center;
+  font-weight: 700;
+  font-size: xx-large;
+  margin: 25px 10px 10px 10px;
+}
+
+.fondoTo#fondoRegistro .IniSesion .contIngreso .clasex {
+  text-align: center;
+}
+.fondoTo#fondoRegistro .IniSesion .contIngreso .clasex ul {
+  display:flex;
+}
+.fondoTo#fondoRegistro .IniSesion .contIngreso .clasex ul li{
+  padding-right: 10px;
+}
+.fondoTo#fondoRegistro .IniSesion .contIngreso .butIngreso {
+  height: 50px;
+  width: 90px;
+  margin: 15px 5px 15px 5px;
+  color: white;
+  background-color: #382e36;
+  border-color: white;
+}
 
 /* anidacion pagina contacto */
 .fondoTo {
   background-image: url(./../img/12-129971_m.jpg);
-  background-size: cover; }
-  .fondoTo .IniSesion {
-    display: flex;
-    align-content: center;
-    height: auto;
-    justify-content: center; }
-    .fondoTo .IniSesion .contIngreso {
-      padding: 40px 40px 40px 40px;
-      height: 90%;
-      background-color: #414141;
-      border-style: solid;
-      margin: 25px 25px 25px 25px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      box-shadow: 7px 13px 37px #000;
-      border-top: 4px solid #017bab;
-      color: aliceblue; }
-      .fondoTo .IniSesion .contIngreso .tituIni {
-        text-align: center;
-        font-weight: 700;
-        font-size: xx-large;
-        margin: 25px 10px 40px 10px; }
-      .fondoTo .IniSesion .contIngreso .inputarea {
-        height: 150px;
-        width: 300px; }
-      .fondoTo .IniSesion .contIngreso .butIngreso2 {
-        margin: 15px 5px 15px 5px;
-        color: white;
-        background-color: #017bab;
-        border-color: white;
-        height: 60px;
-        width: 100px;
-        border-radius: 10px; }
+  background-size: cover;
+}
+
+.fondoTo .IniSesion {
+  display: flex;
+  align-content: center;
+  height: auto;
+  justify-content: center;
+}
+
+.fondoTo .IniSesion .contIngreso {
+  padding: 40px 40px 40px 40px;
+  height: 90%;
+  background-color: #414141;
+  border-style: solid;
+  margin: 25px 25px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 7px 13px 37px #000;
+  border-top: 4px solid #017bab;
+  border-right: 4px solid #005272;
+  color: aliceblue;
+}
+
+.fondoTo .IniSesion .contIngreso .tituIni {
+  text-align: center;
+  font-weight: 700;
+  font-size: xx-large;
+  margin: 25px 10px 40px 10px;
+}
+
+.fondoTo .IniSesion .contIngreso .inputarea {
+  height: 150px;
+  width: 300px;
+}
+
+.fondoTo .IniSesion .contIngreso .butIngreso2 {
+  margin: 15px 5px 15px 5px;
+  color: white;
+  background-color: #017bab;
+  border-color: white;
+  height: 60px;
+  width: 100px;
+  border-radius: 10px;
+}
 
 /* pagina registro */
 
-.contFondoSede{
+.contFondoSede {
   background-color: #0093E9;
-background-image: linear-gradient(225deg, #0093E9 10%, #80D0C7 50%, #ffffff 100%);
-
-}
-.tamImgSede{
-  height: 500px!important;
+  background-image: linear-gradient(225deg, #0093E9 10%, #80D0C7 50%, #ffffff 100%);
+  background-attachment:scroll;
 }
 
-ul li{
+.tamImgSede {
+  height: 500px !important;
+}
+
+ul li {
   list-style: none;
 }
- .direcSede{
-      width: 80%!important;
-    }
 
+.direcSede {
+  width: 50% !important;
+}
+.fondoPanel{
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+/* pagina sedes */
 
 @media screen and (max-width: 800px) {
+
+  .listaCursos .contTarj {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "gridTrainer gridBox"
+      "gridPrepF gridTenis"
+      " gridCalis gridNutri"
+      " gridYoga gridMasajes"
+      " gridgap ... ";
+    grid-column-gap: 1px;
+    grid-row-gap: 5px;
+    justify-items: center;
+    background-image: url(./../img/fondolight.jpg);
+  }
+
+  .gridTrainer {
+    grid-area: gridTrainer;
+  }
+
+  .gridBox {
+    grid-area: gridBox;
+  }
+
+  .gridPrepF {
+    grid-area: gridPrepF;
+  }
+
+  .gridTenis {
+    grid-area: gridtenis;
+  }
+
+  .gridCalis {
+    grid-area: gridCalis;
+  }
+
+  .gridNutri {
+    grid-area: gridNutri;
+  }
+
+  article.articTotal {
+    display: block;
+    height: 100%;
+  }
+
+  .articTotal .tituP {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .articTotal .tituP .bienveP {
+    padding: 10px 40px 30px 40px;
+    display: block;
+    font-size: 1.3em;
+  }
+
+  .articTotal .contVideo {
+    width: 100%;
+    height: 300px;
+  }
+
+  .ubica {
+    display: flex;
+    margin: 25px 25px 25px 25px;
+    flex-direction: column;
+    align-items: center;
+}
+
+  .totalRedes .redes {
+    padding-left: 0px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50px;
+  }
+
+  .cadaCurso p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .tamImgSede {
+    height: 350px !important;
+  }
+
+  .direcSede {
+    height: 250px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    height: 100%;
+    width: 100%;
+  }
 
   .listaCursos .contTarj {
     display: grid;
@@ -364,251 +576,191 @@ ul li{
     justify-items: center;
     background-image: url(./../img/fondolight.jpg);
   }
-  .gridTrainer {
-    grid-area: gridTrainer; }
-  
-  .gridBox {
-    grid-area: gridBox; }
-  
-  .gridPrepF {
-    grid-area: gridPrepF; }
-  
-  .gridTenis {
-    grid-area: gridtenis; }
-  
-  .gridCalis {
-    grid-area: gridCalis; }
-  
-  .gridNutri {
-    grid-area: gridNutri; }
-    article.articTotal {
-      display: block;
-      height: 100%;
-    }
-    .articTotal .tituP {  
-     display: block;
-      width: 100%;
-      height: auto;
-      text-align: center;
-    }
-    .articTotal .tituP .bienveP{
-      padding: 10px 15px 10px 15px;
-      display: block;
-      font-size: 15px;
-    }
-    .articTotal .contVideo{
-      width: 100%;
-      height: 300px;
-    }
-    .ubica {
-      display: block;
-      margin: 25px 25px 25px 25px;
-    }
-    .totalRedes .redes {
-      padding-left: 0px;
-      justify-content: center;
-      flex-direction: column;
-      align-items: flex-start;
-      padding-left: 50px;
-    }
-    .cadaCurso p {
-      font-size: 1em;
-      margin-bottom: 10px;
-      text-align: center;
-    }
-    .tamImgSede{
-      height: 350px!important;
-    }
-    .direcSede{
-      height: 250px!important;
-    }
-    }
 
-  @media screen and (max-width: 480px) {
-    * {
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      height: 100%;
-      width: 100%;
-    }
-  
-    .listaCursos .contTarj {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas:
-        "gridTrainer gridBox"
-        "gridPrepF gridTenis"
-        " gridCalis gridNutri";
-      grid-column-gap: 1px;
-      grid-row-gap: 5px;
-      justify-items: center;
-      background-image: url(./../img/fondolight.jpg);
-    }
-    .gridTrainer {
-      grid-area: gridTrainer; }
-    
-    .gridBox {
-      grid-area: gridBox; }
-    
-    .gridPrepF {
-      grid-area: gridPrepF; }
-    
-    .gridTenis {
-      grid-area: gridtenis; }
-    
-    .gridCalis {
-      grid-area: gridCalis; }
-    
-    .gridNutri {
-      grid-area: gridNutri; }
-    
-      .totalRedes .redes {
-        padding-left: 0px;
-        justify-content: center;
-        display:flex;
-        flex-direction: row;
-      }
-  
-  
-    .title {
-      font-size: 30px;
-    }
-  
-    article.articTotal {
-      display: block;
-      height: 100%;
-    }
-    .articTotal .tituP {  
-     display: block;
-      width: 100%;
-      height: auto;
-    }
-    .articTotal .tituP .bienveP{
-      padding: 10px 15px 10px 15px;
-      display: block;
-      font-size: 15px;
-    }
-    .articTotal .contVideo{
-      width: 100%;
-      height: 300px;
-      margin: 0px;
-    }
-    .articTotal .tituP .bienvenido {
-      display: block;
-      text-align: center;
-      font-size: 3em;
-    }
-  
-    .parte {
-      width: 100%;
-      font-size: 30px;
-    }
-  
-    .totalRedes {
-      display: block;
-      height: 100%;
-      background-size: cover;
-    }
-  
-    .listaCursos .contTarj .cadaCurso {
-      height: 90%;
-      width: 90%;
-      justify-content: space-between;
-    }
-    .cadaCurso p {
-      font-size: 13px;
-      margin-bottom: 10px;
-      text-align: center;
-    }
-    .cartaTitu {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-  
-    .SobreNostotal .sobreNos {
-      padding: 15px 20px 15px 20px;
-    }
-  
-    .SobreNostotal .sobreNos .bienveP {
-      font-size: 15px;
-    }
-    .contVideo{
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 300px;
+  .gridTrainer {
+    grid-area: gridTrainer;
   }
-    
-  .totalRedes .tituRedes{
-  
-     display: block;
-      text-align: center;
-      margin: 0px;
-      padding: 10px;
-      font-size: medium;
-    }
-    
-    .totalRedes .redes {
-      padding-left: 0px;
-      justify-content: center;
-    }
-    .redes li {
-      font-size: 12px;
-    }
-    .ubica {
-      padding: 25px 25px 0px 25px;
-      margin: 0px;
-      justify-content: center;
-      display: flex;
-      height: 100%;
-padding-bottom: 20px;
-    }
-    .ubi {
-      font-size: 13px;
-    }
-  
-    .imgCurso {
-      margin-bottom: 2px;
-      height: 150px;
-    }
-  
-    iframe {
-      width: 90%;
-      height: 90%;
-    }
-  .IniSesion{
+
+  .gridBox {
+    grid-area: gridBox;
+  }
+
+  .gridPrepF {
+    grid-area: gridPrepF;
+  }
+
+  .gridTenis {
+    grid-area: gridtenis;
+  }
+
+  .gridCalis {
+    grid-area: gridCalis;
+  }
+
+  .gridNutri {
+    grid-area: gridNutri;
+  }
+
+  .totalRedes .redes {
+    padding-left: 0px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .title {
+    font-size: 30px;
+  }
+
+  article.articTotal {
+    display: block;
+    height: 100%;
+  }
+
+  .articTotal .tituP {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .articTotal .tituP .bienveP {
+    padding: 10px 15px 10px 15px;
+    display: block;
+    font-size: 15px;
+  }
+
+  .articTotal .contVideo {
+    width: 100%;
+    height: 300px;
+    margin: 0px;
+  }
+
+  .articTotal .tituP .bienvenido {
+    display: block;
+    text-align: center;
+    font-size: 3em;
+  }
+
+  .parte {
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .totalRedes {
+    display: block;
+    height: 100%;
+    background-size: cover;
+  }
+
+  .listaCursos .contTarj .cadaCurso {
+    height: 90%;
+    width: 90%;
+    justify-content: space-between;
+  }
+
+  .cadaCurso p {
+    font-size: 13px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .cartaTitu {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .SobreNostotal .sobreNos {
+    padding: 15px 20px 15px 20px;
+  }
+
+  .SobreNostotal .sobreNos .bienveP {
+    font-size: 15px;
+  }
+
+  .contVideo {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+  }
+
+  .totalRedes .tituRedes {
+
+    display: block;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+    font-size: medium;
+  }
+
+  .totalRedes .redes {
+    padding-left: 0px;
+    justify-content: center;
+  }
+
+  .redes li {
+    font-size: 12px;
+  }
+
+  .ubica {
+    padding: 25px 25px 0px 25px;
+    margin: 0px;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    padding-bottom: 20px;
+    flex-direction: row;
+  }
+
+  .ubi {
+    font-size: 13px;
+  }
+
+  .imgCurso {
+    margin-bottom: 2px;
+    height: 150px;
+  }
+
+  iframe {
+    width: 90%;
+    height: 90%;
+  }
+
+  .IniSesion {
     width: 100%;
   }
-  .contIngreso{
+
+  .contIngreso {
     width: 89%;
   }
-  .videoQuerie{
+
+  .videoQuerie {
     width: 150px;
     height: 150px;
   }
 
-  ul li a.listaIndex{
-    display:none;
+  ul li a.listaIndex {
+    display: none;
   }
 
-  
-  .articleTotal{
-    display:block;
+
+  .articleTotal {
+    display: block;
     height: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-    }
-    .tamImgSede{
-      height: 250px!important;
-    }
-    
-    .fondoTo .IniSesion .contIngreso{
-      width: 80%;
-    }
-    .direcSede{
-      width: 80%!important;
-    }
   }
+
+  .tamImgSede {
+    height: 250px !important;
+  }
+
+  .fondoTo .IniSesion .contIngreso {
+    width: 80%;
+  }
+
+  .direcSede {
+    width: 80% !important;
+  }
+}
